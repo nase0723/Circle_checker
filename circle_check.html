@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Circle_QuickCheck</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+  <style type="text/css">
+  </style>
+  <link rel="stylesheet" href="circle_check.css">
+</head>
+<body>
+  <div class="container">
+    <h1>半径または直径を入力してください</h1>
+    <select name="circle_info" id="circle_info">
+      <option value="半径" selected>半径</option>
+      <option value="直径" >直径</option>
+    </select>
+    <input type="text" id="input_value" onKeyup="this.value=this.value.replace(/[^0-9,.]+/,'')" size="12" tabindex="2" oninput="get_info()">
+  </div>
+
+  <div class="wrapper" id="answer">
+    <div class="item">
+      <p id="radius_diameter"></p>
+      <p id="radius_diameter_value"></p>
+    </div>
+    <div class="item">
+      <p id="area"></p>
+      <p id="area_value"></p>
+    </div>
+    <div class="item">
+      <p id="perimeter"></p>
+      <p id="perimeter_value"></p>
+    </div>
+    <div class="item">
+      <p id="ball_surface_area"></p>
+      <p id="ball_surface_area_value"></p>
+    </div>
+    <div class="item">
+      <p id="ball_volume"></p>
+      <p id="ball_volume_value"></p>
+    </div>
+    
+  </div>
+
+  <script src="circle_check.js"></script>
+</body>
+</html>
